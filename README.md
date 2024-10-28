@@ -80,8 +80,6 @@ Medal: The type of medal won (Gold, Silver, Bronze)
    GROUP BY sport
    ORDER BY medal_count DESC;
    ```
-It looks like you have a comprehensive SQL analysis for Olympic events, focusing on India's medal tally and other interesting queries. Let’s break down the key points and structure them into clear SQL queries based on your discussion:
-
 ### 1. Total Medals Won by India per Event
 
 To get the count of total medals won by India, grouped by each event:
