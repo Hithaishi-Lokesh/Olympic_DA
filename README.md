@@ -3,6 +3,38 @@
 
 Comprehensive dataset on Olympic events, which can provide many insights!
 
+
+### Overview of the Olympic Events Dataset
+
+The **Olympic Events** dataset contains detailed information about athletes, their performances, and the events in which they participated. Here’s a breakdown of the dataset's structure and some potential analyses you can perform.
+
+#### Dataset Structure
+
+The **Olympic Events** table consists of the following columns:
+
+1. **ID**: Unique identifier for each athlete.
+2. **Name**: Name of the Olympian.
+3. **Sex**: Gender of the athlete (Male/Female).
+4. **Age**: Age of the athlete during the event.
+5. **Height**: Height of the athlete (in cm).
+6. **Weight**: Weight of the athlete (in kg).
+7. **Team**: The team or country the athlete represents.
+8. **NOC**: National Olympic Committee code for the country.
+9. **Games**: Type of the Olympic Games (e.g., Summer, Winter).
+10. **Year**: Year in which the Olympics took place.
+11. **Season**: Indicates if it was a Summer or Winter Olympics.
+12. **City**: City where the event was held.
+13. **Sport**: Sport in which the athlete competed.
+14. **Event**: Specific event within the sport.
+15. **Medal**: Medal won by the athlete (Gold, Silver, Bronze, or None).
+
+#### Analysis Objectives
+
+1. **Medal Counts**: Analyze the total number of medals won by country, gender, or sport.
+2. **Athlete Performance**: Explore the relationship between age, height, weight, and the likelihood of winning a medal.
+3. **Event Trends**: Examine trends in participation across different sports and years.
+4. **Gender Comparisons**: Compare medal wins and performance metrics between male and female athletes.
+
 find out in which year the most medals were won, you can use a query like this:
 
 ```sql
@@ -13,23 +45,6 @@ GROUP BY year
 ORDER BY medal_count DESC
 LIMIT 1;
 ```
-The columns in your Olympic events dataset:
-
-ID: A unique identifier for each entry in the dataset.
-Name: The name of the Olympian.
-Sex: The gender of the Olympian (e.g., Male, Female).
-Age: The age of the Olympian at the time of the event.
-Height: The height of the Olympian (usually in centimeters).
-Weight: The weight of the Olympian (usually in kilograms).
-Team: The name of the team the Olympian belongs to (e.g., a specific country or region).
-Country Code: The code representing the country (usually in ISO format).
-Games: The specific Olympic Games (e.g., "Summer Olympics 2020").
-Year: The year the Olympics took place.
-Season: Indicates whether it was a Summer or Winter Olympics.
-City: The city where the Olympics were hosted.
-Sport: The sport in which the Olympian competed.
-Event: The specific event within the sport (e.g., 100m sprint).
-Medal: The type of medal won (Gold, Silver, Bronze)
 
 1. **Medal Distribution by Country**: Find out which countries have won the most medals overall or in specific sports.
 
